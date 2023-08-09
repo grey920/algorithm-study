@@ -1,5 +1,5 @@
 # algorithm-study
-깃허브 방식은 [여기](https://waytocse.tistory.com/57) 를 참고하여 생성했습니다
+깃허브 방식은 [여기](https://waytocse.tistory.com/59) 를 참고하여 생성했습니다
 
 ## ✅ 참여 방법
 1. 이 저장소를 fork 한다.
