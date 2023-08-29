@@ -1,6 +1,5 @@
 def func(item):
     answer = []
-    result = []
     mapData = {}
     charList = [char for char in item]
     print(charList)
@@ -10,14 +9,10 @@ def func(item):
         result = []
 
         for index, value2 in enumerate(charList[startIndex:], start=startIndex):
-            if not result:
-                result.append(value2)
-            else:
-                result.append(value2)
-                if result[0] == value2:
-                    answer.append(result)
-                    mapData[''.join(map(str, result))] = len(result)
-                    break
+            result.append(value2)
+            if result[0] == value2:
+                answer.append(result)
+                mapData[''.join(map(str, result))] = len(result)
 
     if not mapData :
         return []
