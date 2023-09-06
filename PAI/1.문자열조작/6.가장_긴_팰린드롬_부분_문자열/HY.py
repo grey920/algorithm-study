@@ -6,7 +6,8 @@ from typing import List, Deque, re
 # 가장 긴 팰린드롬 문자열을 출력하라.
 # 예제 1
 # 입력
-palindrome_input = "babad"
+palindrome_input_one = "babad"
+palindrome_input_two = "cbbd"
 
 
 # 출력
@@ -44,12 +45,12 @@ def palindrome(inputVal: str):
 
         if len(joinStr) > 1:
             slicing = valid_palindrome_deque(joinStr)
-            if slicing:
-                if len(joinStr) > 0 and len(joinStr) > len(resultStr):
-                    resultStr = joinStr
+            if slicing and len(joinStr) > 0 and len(joinStr) > len(resultStr):
+                resultStr = joinStr
 
     print("resultStr = ", resultStr)
 
 
 if __name__ == '__main__':
-    palindrome(palindrome_input)
+    palindrome(palindrome_input_one)
+    palindrome(palindrome_input_two)
