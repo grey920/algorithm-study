@@ -19,6 +19,8 @@ import re
 # true
 
 def solution(value: str):
+    print("start")
+
     # 정규 표현식을 사용하여 문자와 숫자만 추출
     cleaned_text = re.sub(r'[^a-zA-Z0-9]', '', value)
 
@@ -32,5 +34,6 @@ if __name__ == '__main__':
     solution_1 = solution(text1)
     solution_2 = solution(text2)
 
-    print(text1, '-> solution_1 = ', solution_1)
-    print(text2, '-> solution_2 = ', solution_2)
+    print('end : ', text1, '-> solution_1 = ', solution_1)
+    print('end : ', text2, '-> solution_2 = ', solution_2)
+    print("전체 시간 복잡도는 O(n)")
